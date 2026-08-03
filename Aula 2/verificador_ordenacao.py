@@ -1,5 +1,13 @@
 def esta_ordenada(array):
-
+    """
+    Verifica se uma lista está ordenada em ordem crescente.
+    
+    Args:
+        array: lista de elementos a ser verificada
+        
+    Returns:
+        True se estiver ordenada, False caso contrário
+    """
     if array is None or len(array) <= 1:
         return True 
 
@@ -8,7 +16,6 @@ def esta_ordenada(array):
             return False 
          
         return True 
-
 
 if __name__ == "__main__": 
     array_ordenado = [1, 2, 3, 4, 5]
