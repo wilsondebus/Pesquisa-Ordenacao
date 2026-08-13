@@ -2,7 +2,7 @@
     - É baseado no Bolha, ou seja, é uma tentantiva de melhorar o Bolha.
     - Estável (estavel quer dizer que mantem a ordenação)
     - Memória Interna
-    - A estrutura possui 3 partes/porções (1a é a ordenada pelos menores; 2a é a desordenada; 3a é a ordenada pelos maiores)
+    - A estrutura possui 3 partes/porções (1a é a ordenada pelos menores; 2a é a desordenada; 3a é a ordenada pelos maiores) - formato piramide invertida
 
     De fato é a aplicação do bolha da esquerda para direita e depois da direita para esquerda
 
@@ -26,9 +26,9 @@ fim = 4
 ```c#
 void agitacao(List<> lista) {
     bool houveTroca;
-    int tmp;
+    int tmp;  //variavel auxiliar para fazer a troca
     int ini = 0;
-    int fim = lista.Count;
+    int fim = lista.Count; //mesma coisa que o size, serve para fazer a contagem 
     int qtdComparacoes = 0, qtdTrocas = 0;  //avalia a complexidade ou o esforço
 
     do {
@@ -61,7 +61,7 @@ void agitacao(List<> lista) {
             }
         }
         ini++;
-
+    
     } while (houveTroca);
 }
 ````
