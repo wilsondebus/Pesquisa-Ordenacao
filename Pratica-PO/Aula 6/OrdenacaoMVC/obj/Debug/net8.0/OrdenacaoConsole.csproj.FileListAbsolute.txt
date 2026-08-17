@@ -1,0 +1,15 @@
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\bin\Debug\net8.0\OrdenacaoConsole.exe
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\bin\Debug\net8.0\OrdenacaoConsole.deps.json
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\bin\Debug\net8.0\OrdenacaoConsole.runtimeconfig.json
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\bin\Debug\net8.0\OrdenacaoConsole.dll
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\bin\Debug\net8.0\OrdenacaoConsole.pdb
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\obj\Debug\net8.0\OrdenacaoConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\obj\Debug\net8.0\OrdenacaoConsole.AssemblyInfoInputs.cache
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\obj\Debug\net8.0\OrdenacaoConsole.AssemblyInfo.cs
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\obj\Debug\net8.0\OrdenacaoConsole.csproj.CoreCompileInputs.cache
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\obj\Debug\net8.0\OrdenacaoConsole.sourcelink.json
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\obj\Debug\net8.0\OrdenacaoConsole.dll
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\obj\Debug\net8.0\refint\OrdenacaoConsole.dll
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\obj\Debug\net8.0\OrdenacaoConsole.pdb
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\obj\Debug\net8.0\OrdenacaoConsole.genruntimeconfig.cache
+C:\Users\laboratorio\Desktop\Pesquisa-Ordenacao\Pratica-PO\Aula 6\OrdenacaoMVC\obj\Debug\net8.0\ref\OrdenacaoConsole.dll
