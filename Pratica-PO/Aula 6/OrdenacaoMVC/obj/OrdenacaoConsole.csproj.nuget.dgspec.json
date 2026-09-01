@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\laboratorio\\Desktop\\Pesquisa-Ordenacao\\Pratica-PO\\Aula 6\\OrdenacaoMVC\\OrdenacaoConsole.csproj": {}
+    "C:\\Users\\wilsi\\OneDrive\\Desktop\\UFN\\Pesquisa-Ordenacao\\Pratica-PO\\Aula 6\\OrdenacaoMVC\\OrdenacaoConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\laboratorio\\Desktop\\Pesquisa-Ordenacao\\Pratica-PO\\Aula 6\\OrdenacaoMVC\\OrdenacaoConsole.csproj": {
+    "C:\\Users\\wilsi\\OneDrive\\Desktop\\UFN\\Pesquisa-Ordenacao\\Pratica-PO\\Aula 6\\OrdenacaoMVC\\OrdenacaoConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\laboratorio\\Desktop\\Pesquisa-Ordenacao\\Pratica-PO\\Aula 6\\OrdenacaoMVC\\OrdenacaoConsole.csproj",
+        "projectUniqueName": "C:\\Users\\wilsi\\OneDrive\\Desktop\\UFN\\Pesquisa-Ordenacao\\Pratica-PO\\Aula 6\\OrdenacaoMVC\\OrdenacaoConsole.csproj",
         "projectName": "OrdenacaoConsole",
-        "projectPath": "C:\\Users\\laboratorio\\Desktop\\Pesquisa-Ordenacao\\Pratica-PO\\Aula 6\\OrdenacaoMVC\\OrdenacaoConsole.csproj",
-        "packagesPath": "C:\\Users\\laboratorio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\laboratorio\\Desktop\\Pesquisa-Ordenacao\\Pratica-PO\\Aula 6\\OrdenacaoMVC\\obj\\",
+        "projectPath": "C:\\Users\\wilsi\\OneDrive\\Desktop\\UFN\\Pesquisa-Ordenacao\\Pratica-PO\\Aula 6\\OrdenacaoMVC\\OrdenacaoConsole.csproj",
+        "packagesPath": "C:\\Users\\wilsi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wilsi\\OneDrive\\Desktop\\UFN\\Pesquisa-Ordenacao\\Pratica-PO\\Aula 6\\OrdenacaoMVC\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\laboratorio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\wilsi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,19 +59,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.29, 8.0.29]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.29, 8.0.29]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.29, 8.0.29]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.29, 8.0.29]"
             }
           ],
           "frameworkReferences": {
@@ -86,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
