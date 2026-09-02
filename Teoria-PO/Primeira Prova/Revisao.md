@@ -72,14 +72,14 @@ public int compareTo(Pessoa o) {
 
     - Quantidade de comparações * Quantidade de trocas
 
-| Maior complexidade |
-    - O(n!)
-    - O(n^x)       ← depende do valor de x
-    - O(n log n)
-    - O(n)
-    - O(log n)
-    - O(1)
-| Menor complexidade |
+    | Maior complexidade |
+        - O(n!)
+        - O(n^x)       ← depende do valor de x
+        - O(n log n)
+        - O(n)
+        - O(log n)
+        - O(1)
+    | Menor complexidade |
 
 ### Comparações 
     - Quando um algoritmo verifica valores, é uma comparação 
