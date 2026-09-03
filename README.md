@@ -28,4 +28,4 @@ Aula 2
 Aula 3
 ...
 
-Dessa forma, cada aula possui sua parte teórica e sua respectiva parte prática, facilitando a organização e o acompanhamento dos conteúdos ao longo da di
+Dessa forma, cada aula possui sua parte teórica e sua respectiva parte prática, facilitando a organização e o acompanhamento dos conteúdos ao longo da disciplina
