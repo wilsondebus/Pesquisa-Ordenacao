@@ -4,6 +4,10 @@
  */
 package view;
 
+import controller.Ordenacao;
+import controller.Util; 
+import java.util.ArrayList;
+import model.Model; 
 import javax.swing.JOptionPane;
 
 /**
@@ -20,6 +24,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
     public JFramePrincipal() {
         initComponents();
         jPanel1Resultados.setVisible(false);
+        Model.lista = new ArrayList<>();
     }
 
     /**
@@ -196,7 +201,11 @@ public class JFramePrincipal extends javax.swing.JFrame {
         if(txtNomeArquivo.getText().equals("")){
             JOptionPane.showMessageDialog(this, "Informe nome do arquivo", "Atenção", JOptionPane.ERROR_MESSAGE);
         } else {
-            
+            if(Util.carregarArquivoEmLista(txtNomeArquivo.getName(), Model.lista)){
+                JOptionPane.showMessageDialog(this, "Lista Carregada com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE); 
+            } else {
+                JOptionPane.showMessageDialog(this, "Problemas ao ler o arquivo e carregar a lista", "Erro", JOptionPane.ERROR_MESSAGE);
+            }
         }
     }//GEN-LAST:event_btnAbrirActionPerformed
 
