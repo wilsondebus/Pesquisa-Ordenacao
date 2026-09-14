@@ -52,6 +52,8 @@ public class JFramePrincipal extends javax.swing.JFrame {
         txtQntdTrocas = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         txtQntdTempo = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Pesquisa e Ordenação");
@@ -64,6 +66,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
         btnAbrir.addActionListener(this::btnAbrirActionPerformed);
 
         btnLimpar.setText("Limpar");
+        btnLimpar.addActionListener(this::btnLimparActionPerformed);
 
         jLabel2.setText("Métodos de Ordenação:");
 
@@ -110,7 +113,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
                     .addComponent(txtQntdComparacoes)
                     .addComponent(txtQntdTrocas)
                     .addComponent(txtQntdTempo, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE))
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1ResultadosLayout.setVerticalGroup(
             jPanel1ResultadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -131,32 +134,51 @@ public class JFramePrincipal extends javax.swing.JFrame {
                 .addGroup(jPanel1ResultadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel6)
                     .addComponent(txtQntdTempo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(164, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Métodos", "Qtd Comparações", "Qtd Trocas", "Tempo (ms)"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(txtNomeArquivo)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(btnAbrir, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(btnLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(CmbMetodo, 0, 267, Short.MAX_VALUE))
-                    .addComponent(btnExecutar, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1Resultados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 3, Short.MAX_VALUE))
+                    .addComponent(jPanel1Resultados, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(21, 21, 21)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel2))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(txtNomeArquivo)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(btnAbrir, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(btnLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(CmbMetodo, 0, 267, Short.MAX_VALUE))
+                                    .addComponent(btnExecutar, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 6, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -177,6 +199,8 @@ public class JFramePrincipal extends javax.swing.JFrame {
                 .addComponent(btnExecutar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1Resultados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -193,7 +217,54 @@ public class JFramePrincipal extends javax.swing.JFrame {
 
     private void btnExecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExecutarActionPerformed
         // TODO add your handling code here:
-        jPanel1Resultados.setVisible(true);
+        if( Model.lista.isEmpty()){
+            JOptionPane.showMessageDialog(this, "O arquivo nãp fpoi carregado para a lista", "Erro", JOptionPane.ERROR_MESSAGE);
+        } else {
+            jPanel1Resultados.setVisible(true); 
+            switch (CmbMetodo.getSelectedIndex()){
+                case 0: // bolha
+                    metricas.clear();
+                    tempoInicio = System.nanoTime();
+                    metricas.addAll(controller.Ordenacao.bolha(Model.lista));
+                    tempoFim = System.nanoTime(); 
+                    metricas.add((float)(tempoFim - tempoInicio ) / 1000000); 
+                    break;
+                case 1: // insercao
+                    metricas.clear();
+                    tempoInicio = System.nanoTime();
+                    metricas.addAll(controller.Ordenacao.insercao(Model.lista));
+                    tempoFim = System.nanoTime(); 
+                    metricas.add((float)(tempoFim - tempoInicio ) / 1000000);          
+                    break;
+                case 2: // pente
+                    metricas.clear();
+                    tempoInicio = System.nanoTime();
+                    metricas.addAll(controller.Ordenacao.pente(Model.lista));
+                    tempoFim = System.nanoTime(); 
+                    metricas.add((float)(tempoFim - tempoInicio ) / 1000000);
+                    break;
+                    
+                case 3: //selecao
+                    metricas.clear();
+                    tempoInicio = System.nanoTime();
+                    metricas.addAll(controller.Ordenacao.selecao(Model.lista));
+                    tempoFim = System.nanoTime(); 
+                    metricas.add((float)(tempoFim - tempoInicio ) / 1000000);
+                    break;
+                    
+                default:
+                    throw new AssertionError(); 
+            }
+        }  
+        
+            txtResultado.setText(""+Model.lista.size()); 
+            txtQntdComparacoes.setText(""+metricas.get(0));
+            txtQntdTrocas.setText(""+metricas.get(1));
+            txtQntdTempo.setText(""+metricas.get(2));
+           
+        
+        //jPanel1Resultados.setVisible(true);
+        //System.out.println(CmbMetodo.getSelectedIndex() + " " + CmbMetodo.getSelectedItem());
     }//GEN-LAST:event_btnExecutarActionPerformed
 
     private void btnAbrirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAbrirActionPerformed
@@ -205,9 +276,24 @@ public class JFramePrincipal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Lista Carregada com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE); 
             } else {
                 JOptionPane.showMessageDialog(this, "Problemas ao ler o arquivo e carregar a lista", "Erro", JOptionPane.ERROR_MESSAGE);
+                txtQntdTempo.setText(""); 
+                txtNomeArquivo.requestFocusInWindow();
             }
         }
     }//GEN-LAST:event_btnAbrirActionPerformed
+
+    private void btnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparActionPerformed
+        // TODO add your handling code here:
+        
+        txtNomeArquivo.setText(" "); 
+        Model.lista.clear();
+        CmbMetodo.setSelectedIndex(0); 
+        txtResultado.setText("");
+        txtQntdComparacoes.setText("");
+        txtQntdTrocas.setText("");
+        txtQntdTempo.setText(""); 
+        txtNomeArquivo.requestFocusInWindow();
+    }//GEN-LAST:event_btnLimparActionPerformed
 
     /**
      * @param args the command line arguments
@@ -234,6 +320,9 @@ public class JFramePrincipal extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(() -> new JFramePrincipal().setVisible(true));
     }
 
+    ArrayList<Float> metricas = new ArrayList<>();
+    long tempoInicio, tempoFim;
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> CmbMetodo;
     private javax.swing.JButton btnAbrir;
@@ -246,6 +335,8 @@ public class JFramePrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1Resultados;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable;
     private javax.swing.JTextField txtNomeArquivo;
     private javax.swing.JTextField txtQntdComparacoes;
     private javax.swing.JTextField txtQntdTempo;
