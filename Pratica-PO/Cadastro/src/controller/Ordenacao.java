@@ -106,4 +106,41 @@ public class Ordenacao {
         metricas.add((float)qtdTrocas);
         return metricas;
     }
+    
+    public static ArrayList shell(ArrayList<Integer> lista){
+        ArrayList<Float> metricas = new ArrayList<>(); 
+        int i, j;
+        int temp; 
+        int n = lista.size(); 
+        int qtdComparacoes = 0, qtdTrocas = 0;
+        int distancia = 1; 
+        int referenciaTamanho = 3; 
+        
+        do{
+            distancia = referenciaTamanho * distancia + 1;
+        } while ( distancia < n); 
+        
+        do{
+            distancia = (int)(distancia / referenciaTamanho);
+            
+            for(i = distancia; i < n; i++){
+                temp = lista.get(i);
+                for(j = i - distancia; j >= 0; j = j - distancia){
+                    qtdComparacoes++;
+                    if(temp < lista.get(j)){
+                        lista.set(j + distancia, lista.get(j));
+                        qtdTrocas++;
+                    } else{
+                        break;
+                    }                      
+            }
+            lista.set(j + distancia, temp);
+            qtdTrocas++;
+        }
+    } while (distancia > 1);
+        
+    metricas.add((float)qtdComparacoes);
+    metricas.add((float)qtdTrocas); 
+    
+    return metricas; 
 }
