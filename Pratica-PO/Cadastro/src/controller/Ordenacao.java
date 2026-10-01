@@ -3,6 +3,14 @@ package controller;
 import java.util.ArrayList;
 
 public class Ordenacao {
+    public static boolean contido(int numero, ArrayList<Integer> lista){
+        for(Integer item : lista){
+            if(item == numero){
+                return true;
+            }
+        }
+        return false; 
+    }
     
     public static ArrayList bolha(ArrayList<Integer> lista) {
         ArrayList<Float> metricas = new ArrayList<>();
