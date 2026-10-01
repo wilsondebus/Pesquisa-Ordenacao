@@ -17,3 +17,6 @@
 
         - digital
             - pesquisa digito a digito 
+
+### Atividade 
+    - Fazer o mesmo programa que gere 100 mil numeros e fazer o metodo de pesquisa 
