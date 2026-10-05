@@ -13,9 +13,15 @@ public class TestandoString {
         String sFrase = "alexandre de oliveira zamberlam";
         StringBuffer sbfrase = new StringBuffer("alexandre de oliveira zamberlam");
         StringBuilder sbuilderFrase = new StringBuilder("alexandre de oliveira zamberlam");
+        String palavra = "andre";
+        int tamanhoPalavra = palavra.length();
         
-        System.out.println(sFrase.contains("andre"));
-        System.out.println(sFrase.indexOf("andre"));
+        for(int i = 0; i+tamanhoPalavra < sFrase.length(); i++){
+            if (palavra.equalsIgnoreCase(sFrase.substring(i, i+tamanhoPalavra))){
+                System.out.println("encontrei...\n");
+            }
+        }
+       
     }
     
 }
