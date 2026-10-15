@@ -12,3 +12,6 @@ Construir um programa em Java, C# ou Python que:
 
 3) DESAFIO:
     - pesquise sobre uso de threads e tente procurar N celulares ao mesmo tempo
+
+### Próximo passo:
+    - Fazer em Python e C#
